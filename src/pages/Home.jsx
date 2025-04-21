@@ -131,7 +131,7 @@ function Home() {
           }}
         />
         <Typography variant="h5" gutterBottom>
-          Precio: ¿?$ 
+          Precio: 9,99$ incluido IVA
         </Typography>
         <Button
           variant="contained"
