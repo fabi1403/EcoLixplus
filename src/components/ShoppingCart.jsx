@@ -18,7 +18,7 @@ const products = [
   {
     id: 1,
     name: 'Lixiviado EcoLix+',
-    price: 25.00,
+    price: 9.99,
     image: '/lixi.png',
     description: 'Lixiviado ecológico premium para mejorar la calidad del suelo',
     unit: 'litro'

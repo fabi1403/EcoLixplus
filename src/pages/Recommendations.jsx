@@ -2,6 +2,32 @@ import { Box, Container, Typography, Grid, Card, CardContent } from '@mui/materi
 import EcoIcon from '@mui/icons-material/EmojiNature';
 import PestControlIcon from '@mui/icons-material/PestControl';
 import SavingsIcon from '@mui/icons-material/Savings';
+import { keyframes } from '@mui/system';
+import { styled } from '@mui/material/styles';
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+`;
+
+const AnimatedCard = styled(Card)(({ theme, index }) => ({
+  height: '100%',
+  transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+  animation: `${fadeIn} 0.5s ease-out forwards`,
+  animationDelay: `${index * 0.2}s`,
+  background: index === 0
+    ? 'linear-gradient(135deg, #2c5e1a 0%, #1a472e 100%)'
+    : index === 1
+    ? 'linear-gradient(135deg, #4a1c1a 0%, #3d1515 100%)'
+    : 'linear-gradient(135deg, #1a3a4a 0%, #142c3b 100%)',
+  '&:hover': {
+    transform: 'scale(1.05)',
+    boxShadow: '0 8px 16px rgba(0,0,0,0.4)',
+    '& .MuiCardContent-root': {
+      background: 'rgba(255,255,255,0.05)'
+    }
+  }
+}));
 
 const recommendations = [
   {
@@ -37,33 +63,34 @@ function Recommendations() {
         <Grid container spacing={4} sx={{ mt: 4 }}>
           {recommendations.map((recommendation, index) => (
             <Grid item xs={12} key={index}>
-              <Card
-                sx={{
-                  height: '100%',
-                  bgcolor: 'background.paper',
-                  color: 'text.primary'
-                }}
-              >
-                <CardContent>
+              <AnimatedCard index={index}>
+                <CardContent sx={{
+                  transition: 'background 0.3s ease',
+                  borderRadius: 1,
+                  '& .MuiTypography-root': {
+                    color: 'white',
+                    textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
+                  }
+                }}>
                   <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                    <Box sx={{ color: 'secondary.main', mr: 2 }}>
+                    <Box sx={{ color: 'primary.main', mr: 2, transform: 'scale(1)', transition: 'transform 0.3s ease', '&:hover': { transform: 'scale(1.2)' } }}>
                       {recommendation.icon}
                     </Box>
                     <Typography variant="h5" component="div">
                       {recommendation.title}
                     </Typography>
                   </Box>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" sx={{ color: 'text.primary', mt: 2, opacity: 0.9 }}>
                     {recommendation.description}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  <Typography variant="body2" sx={{ mt: 2, color: 'text.primary', fontWeight: 'bold', opacity: 0.9 }}>
                     {recommendation.benefit}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  <Typography variant="h5" sx={{ mt: 2, textAlign: 'center', opacity: 0.9 }}>
                     {recommendation.emoji}
                   </Typography>
                 </CardContent>
-              </Card>
+              </AnimatedCard>
             </Grid>
           ))}
         </Grid>
