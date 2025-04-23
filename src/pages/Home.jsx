@@ -84,17 +84,7 @@ function Home() {
         <Grid container spacing={4} sx={{ mt: 4 }}>
           {benefits.map((benefit, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
-              <Card
-                sx={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  p: 2
-                }}
-              >
+              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
                 <Box sx={{ color: 'primary.main', mb: 2 }}>{benefit.icon}</Box>
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
@@ -115,7 +105,6 @@ function Home() {
         <Typography variant="h3" gutterBottom>
           Productos
         </Typography>
-<<<<<<< HEAD
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
@@ -225,34 +214,6 @@ function Home() {
             </Card>
           </Grid>
         </Grid>
-=======
-        <Typography variant="h4" gutterBottom>
-          LIXIVIADO
-        </Typography>
-        <Box
-          component="img"
-          src="/lixi.png"
-          alt="Lixiviado"
-          sx={{
-            width: '100%',
-            maxWidth: 300,
-            height: 'auto',
-            my: 3,
-            mx: 'auto'
-          }}
-        />
-        <Typography variant="h5" gutterBottom>
-          Precio: 9,99$ incluido IVA
-        </Typography>
-        <Button
-          variant="contained"
-          color="secondary"
-          size="large"
-          onClick={() => navigate('/store')}
-        >
-          Comprar Ahora
-        </Button>
->>>>>>> b183e41c809af13880c1211a2c0ef15e24182500
       </Container>
     </Box>
   );
