@@ -28,7 +28,7 @@ function Contact() {
               </Box>
               <Box sx={{ mb: 2 }}>
                 <Typography variant="h6">🔹 Precio:</Typography>
-                <Typography>$[precio]</Typography>
+                <Typography>$[9.99]</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                 <LocalShippingIcon sx={{ mr: 1 }} />
@@ -51,9 +51,9 @@ function Contact() {
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <WhatsAppIcon sx={{ mr: 1 }} /> 📞 Teléfono / WhatsApp:
                 </Typography>
-                <Typography>📲 [Tu número de contacto]</Typography>
+                <Typography>📲 0987654321 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  (Ejemplo: +52 1 55 1234 5678)
+                
                 </Typography>
               </Box>
 
@@ -61,31 +61,31 @@ function Contact() {
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <EmailIcon sx={{ mr: 1 }} /> 📧 Correo electrónico:
                 </Typography>
-                <Typography>✉️ [tuemail@ejemplo.com]</Typography>
+                <Typography>✉️ ecolix+@correo.com </Typography>
               </Box>
 
               <Box sx={{ mb: 3 }}>
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <LocationOnIcon sx={{ mr: 1 }} /> 📍 Ubicación:
                 </Typography>
-                <Typography>📌 [Ciudad, Estado o punto de entrega]</Typography>
+                <Typography>📌 Salcedo - Unidad Educativa General Eloy Alfaro</Typography>
               </Box>
 
               <Typography variant="h6" gutterBottom>📱 Redes sociales:</Typography>
               <Box sx={{ display: 'flex', gap: 2, mb: 3 }}>
-                <Link href="https://instagram.com/tuusuario" target="_blank" color="inherit">
+                <Link href="https://instagram.com/ecolix+" target="_blank" color="inherit">
                   <IconButton>
-                    <InstagramIcon /> @tuusuario
+                    <InstagramIcon /> @ecolix+
                   </IconButton>
                 </Link>
-                <Link href="https://facebook.com/tupagina" target="_blank" color="inherit">
+                <Link href="https://facebook.com/ecolix+" target="_blank" color="inherit">
                   <IconButton>
-                    <FacebookIcon /> Nombre de tu página
+                    <FacebookIcon /> ecolix+
                   </IconButton>
                 </Link>
-                <Link href="https://twitter.com/tuusuario" target="_blank" color="inherit">
+                <Link href="https://x.com/ecolix+" target="_blank" color="inherit">
                   <IconButton>
-                    <TwitterIcon /> @tuusuario
+                    <xIcon /> @ecolix+
                   </IconButton>
                 </Link>
               </Box>
