@@ -85,7 +85,7 @@ function Contact() {
                 </Link>
                 <Link href="https://x.com/ecolix+" target="_blank" color="inherit">
                   <IconButton>
-                    <xIcon /> @ecolix+
+                    <TwitterIcon /> @ecolix+
                   </IconButton>
                 </Link>
               </Box>
