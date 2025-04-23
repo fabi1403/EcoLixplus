@@ -1,70 +1,98 @@
-import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import { keyframes } from '@mui/system';
 import { styled } from '@mui/material/styles';
 
-const float = keyframes`
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 `;
 
-const AnimatedEmoji = styled('span')(({ delay = 0 }) => ({
-  display: 'inline-block',
-  animation: `${float} 3s ease-in-out infinite`,
-  animationDelay: `${delay}s`,
+const AnimatedCard = styled(Card)(({ theme }) => ({
+  height: '100%',
+  transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+  animation: `${fadeIn} 0.5s ease-out forwards`,
+  '&:hover': {
+    transform: 'scale(1.02)',
+    boxShadow: '0 8px 16px rgba(0,0,0,0.2)'
+  }
 }));
 
-const GradientBackground = styled(Box)(({ theme }) => ({
-  background: 'linear-gradient(135deg, #262871, #007533)',
-  transition: 'background 0.3s ease-in-out',
-  '&:hover': {
-    background: 'linear-gradient(135deg, #007533, #262871)',
+const blogPosts = [
+  {
+    title: 'Beneficios del Lixiviado en la Agricultura Orgánica',
+    date: '15 de Marzo, 2024',
+    image: '/ecolix-logo.png',
+    description: 'Descubre cómo el lixiviado orgánico puede mejorar la calidad de tus cultivos y promover una agricultura más sostenible. Aprende sobre sus beneficios y aplicaciones prácticas.',
+    readTime: '5 min de lectura',
+    author: 'Dr. Carlos Mendoza'
   },
-}));
+  {
+    title: 'Guía Completa de Aplicación de Lixiviados',
+    date: '10 de Marzo, 2024',
+    image: '/OIP.jpg',
+    description: 'Una guía paso a paso sobre cómo aplicar correctamente los lixiviados en tus cultivos. Incluye dosificación, frecuencia y mejores prácticas para obtener resultados óptimos.',
+    readTime: '7 min de lectura',
+    author: 'Ing. María González'
+  },
+  {
+    title: 'Agricultura Sostenible con EcoLix+',
+    date: '5 de Marzo, 2024',
+    image: '/AG.jpg',
+    description: 'Conoce cómo EcoLix+ está transformando la agricultura tradicional en una práctica más sostenible y amigable con el medio ambiente. Casos de éxito y testimonios.',
+    readTime: '6 min de lectura',
+    author: 'Ing. Juan Pérez'
+  },
+  {
+    title: 'Innovación en Fertilizantes Orgánicos',
+    date: '1 de Marzo, 2024',
+    image: '/FER.jpg',
+    description: 'Las últimas tendencias en fertilizantes orgánicos y cómo el lixiviado está revolucionando la manera en que nutrimos nuestros cultivos. Descubre las innovaciones del sector.',
+    readTime: '4 min de lectura',
+    author: 'Dra. Ana Martínez'
+  }
+];
 
 function Resources() {
   return (
-    <GradientBackground sx={{ py: 8 }}>
+    <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
         <Typography variant="h2" align="center" gutterBottom>
-          <AnimatedEmoji delay={0}>🎓</AnimatedEmoji>
-          <AnimatedEmoji delay={0.5}>🌿</AnimatedEmoji>
-          {' Nuestro proyecto de emprendimiento: EcoLix+'}
+          Blog EcoLix+
         </Typography>
-        <Box 
-          component="img" 
-          src="/img4.png" 
-          alt="Leaf" 
-          sx={{ 
-            width: { xs: '100%', md: '50%' }, 
-            height: 'auto', 
-            display: 'block', 
-            margin: 'auto',
-            transition: 'transform 0.3s ease-in-out',
-            '&:hover': {
-              transform: 'scale(1.05)'
-            }
-          }} 
-        />
-        <Typography variant="body1" paragraph>
-          Estamos desarrollando un proyecto de emprendimiento basado en la producción de lixiviado ecológico <AnimatedEmoji>♻️</AnimatedEmoji>, 
-          un fertilizante natural que beneficia la agricultura sostenible. Este proyecto lo estamos llevando a cabo junto a 
-          la Unidad Educativa General Eloy Alfaro, como parte de un concurso estudiantil <AnimatedEmoji delay={0.3}>🏆</AnimatedEmoji>.
+        <Typography variant="h5" align="center" color="text.secondary" paragraph>
+          Artículos y recursos sobre agricultura sostenible y el uso de lixiviados
         </Typography>
-        <Typography variant="body1" paragraph>
-          Nuestro colegio cuenta con la maquinaria adecuada para realizar este proceso agroecológico <AnimatedEmoji delay={0.6}>🚜</AnimatedEmoji>, 
-          lo que nos permite producir lixiviado de alta calidad. Además, somos nosotros, los estudiantes, quienes participamos 
-          activamente en cada etapa del proceso, aportando nuestra mano de obra, esfuerzo y compromiso 
-          <AnimatedEmoji delay={0.9}>💪</AnimatedEmoji><AnimatedEmoji delay={1.2}>👩‍🌾</AnimatedEmoji><AnimatedEmoji delay={1.5}>👨‍🌾</AnimatedEmoji>.
-        </Typography>
-        <Typography variant="body1" paragraph>
-          Este emprendimiento no solo busca ofrecer una alternativa más saludable y económica para los agricultores, 
-          sino también promover el cuidado del medio ambiente y la formación práctica de los jóvenes 
-          <AnimatedEmoji delay={1.8}>🌱</AnimatedEmoji><AnimatedEmoji delay={2.1}>🌎</AnimatedEmoji>.
-        </Typography>
+        <Grid container spacing={4} sx={{ mt: 4 }}>
+          {blogPosts.map((post, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <AnimatedCard>
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={post.image}
+                  alt={post.title}
+                  sx={{ objectFit: 'cover' }}
+                />
+                <CardContent>
+                  <Typography variant="overline" color="text.secondary">
+                    {post.date} · {post.readTime}
+                  </Typography>
+                  <Typography variant="h5" gutterBottom sx={{ mt: 1 }}>
+                    {post.title}
+                  </Typography>
+                  <Typography variant="body1" color="text.secondary" paragraph>
+                    {post.description}
+                  </Typography>
+                  <Typography variant="subtitle2" color="primary">
+                    Por {post.author}
+                  </Typography>
+                </CardContent>
+              </AnimatedCard>
+            </Grid>
+          ))}
+        </Grid>
       </Container>
-    </GradientBackground>
+    </Box>
   );
 }
 

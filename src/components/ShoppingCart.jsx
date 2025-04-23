@@ -17,10 +17,34 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const products = [
   {
     id: 1,
-    name: 'Lixiviado EcoLix+',
+    name: 'Lixiviado EcoLix+ 🌱',
     price: 9.99,
     image: '/lixi.png',
-    description: 'Lixiviado ecológico premium para mejorar la calidad del suelo',
+    description: 'Lixiviado ecológico premium con Calcio 🦴',
+    unit: 'litro'
+  },
+  {
+    id: 2,
+    name: 'Lixiviado EcoLix+ ⚪',
+    price: 9.99,
+    image: '/blanco.png',
+    description: 'Lixiviado ecológico premium con Nitrógeno 🌿',
+    unit: 'litro'
+  },
+  {
+    id: 3,
+    name: 'Lixiviado EcoLix+💜',
+    price: 9.99,
+    image: '/morado.png',
+    description: 'Lixiviado ecológico premium con Potasio 🌺',
+    unit: 'litro'
+  },
+  {
+    id: 4,
+    name: 'Lixiviado EcoLix+ 💙',
+    price: 9.99,
+    image: '/azul.png',
+    description: 'Lixiviado ecológico premium con Fósforo 🌟',
     unit: 'litro'
   }
 ];

@@ -110,37 +110,120 @@ function Home() {
         </Grid>
       </Container>
 
-      {/* Nueva sección de productos */}
-      <Container maxWidth="sm" sx={{ py: 10, textAlign: 'center' }}>
+      {/* Sección de productos */}
+      <Container maxWidth="lg" sx={{ py: 10, textAlign: 'center' }}>
         <Typography variant="h3" gutterBottom>
           Productos
         </Typography>
-        <Typography variant="h4" gutterBottom>
-          LIXIVIADO
-        </Typography>
-        <Box
-          component="img"
-          src="/lixi.png"
-          alt="Lixiviado"
-          sx={{
-            width: '100%',
-            maxWidth: 300,
-            height: 'auto',
-            my: 3,
-            mx: 'auto'
-          }}
-        />
-        <Typography variant="h5" gutterBottom>
-          Precio: ¿?$ 
-        </Typography>
-        <Button
-          variant="contained"
-          color="secondary"
-          size="large"
-          onClick={() => navigate('/store')}
-        >
-          Comprar Ahora
-        </Button>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={3}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+              <Typography variant="h5" gutterBottom>LIXIVIADO 🌱</Typography>
+              <Box
+                component="img"
+                src="/lixi.png"
+                alt="Lixiviado"
+                sx={{
+                  width: '100%',
+                  maxWidth: 200,
+                  height: 'auto',
+                  my: 2
+                }}
+              />
+              <Typography variant="body1" color="text.secondary" gutterBottom>Contiene Calcio 🦴</Typography>
+              <Typography variant="h6" gutterBottom>$9.99</Typography>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => navigate('/store')}
+                fullWidth
+              >
+                Comprar Ahora
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+              <Typography variant="h5" gutterBottom>LIXIVIADO  ⚪</Typography>
+              <Box
+                component="img"
+                src="/blanco.png"
+                alt="Lixiviado EcoLix+"
+                sx={{
+                  width: '100%',
+                  maxWidth: 200,
+                  height: 'auto',
+                  my: 2
+                }}
+              />
+              <Typography variant="body1" color="text.secondary" gutterBottom>Contiene Nitrógeno 🌿</Typography>
+              <Typography variant="h6" gutterBottom>$9.99</Typography>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => navigate('/store')}
+                fullWidth
+              >
+                Comprar Ahora
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+              <Typography variant="h5" gutterBottom>LIXIVIADO💜</Typography>
+              <Box
+                component="img"
+                src="/morado.png"
+                alt="Lixiviado EcoLix+"
+                sx={{
+                  width: '100%',
+                  maxWidth: 200,
+                  height: 'auto',
+                  my: 2
+                }}
+              />
+              <Typography variant="body1" color="text.secondary" gutterBottom>Contiene Potasio 🌺</Typography>
+              <Typography variant="h6" gutterBottom>$9.99</Typography>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => navigate('/store')}
+                fullWidth
+              >
+                Comprar Ahora
+              </Button>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+              <Typography variant="h5" gutterBottom>LIXIVIADO 💙</Typography>
+              <Box
+                component="img"
+                src="/azul.png"
+                alt="Lixiviado EcoLix+"
+                sx={{
+                  width: '100%',
+                  maxWidth: 200,
+                  height: 'auto',
+                  my: 2
+                }}
+              />
+              <Typography variant="body1" color="text.secondary" gutterBottom>Contiene Fósforo 🌟</Typography>
+              <Typography variant="h6" gutterBottom>$9.99</Typography>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => navigate('/store')}
+                fullWidth
+              >
+                Comprar Ahora
+              </Button>
+            </Card>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
