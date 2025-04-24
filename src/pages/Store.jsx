@@ -9,7 +9,7 @@ import BankTransferIcon from '@mui/icons-material/AccountBalance';
 import ShoppingCart from '../components/ShoppingCart';
 
 const bankDetails = {
-  bankName: 'Banco del Pichincha',
+  bankName: 'Banco .proximamente',
   accountHolder: 'EcoLix+',
   accountNumber: '00000000000000',
   accountType: 'Corriente'
