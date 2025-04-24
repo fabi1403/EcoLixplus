@@ -17,7 +17,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const products = [
   {
     id: 1,
-    name: 'Lixiviado EcoLix+ 🌱',
+    name: 'EcoLix+ verde 🌱',
     price: 4.99,
     image: '/lixi.png',
     description: 'Lixiviado ecológico premium con Calcio 🦴',
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Lixiviado EcoLix+ ⚪',
+    name: 'EcoLix+ blanco ⚪ ',
     price: 4.99,
     image: '/blanco.png',
     description: 'Lixiviado ecológico premium con Nitrógeno 🌿',
@@ -33,7 +33,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Lixiviado EcoLix+💜',
+    name: 'EcoLix+ morado 💜',
     price: 4.99,
     image: '/morado.png',
     description: 'Lixiviado ecológico premium con Potasio 🌺',
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 4,
-    name: 'Lixiviado EcoLix+ 💙',
+    name: 'EcoLix+ azul 💙',
     price: 4.99,
     image: '/azul.png',
     description: 'Lixiviado ecológico premium con Fósforo 🌟',
