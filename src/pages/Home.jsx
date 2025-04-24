@@ -108,7 +108,7 @@ function Home() {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <Typography variant="h5" gutterBottom>Ecolix+ verde 🌱</Typography>
+              <Typography variant="h5" gutterBottom>Ecolix+ balance  🌱</Typography>
               <Box
                 component="img"
                 src="/lixi.png"
@@ -135,7 +135,7 @@ function Home() {
 
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <Typography variant="h5" gutterBottom>Ecolix+ blanco ⚪</Typography>
+              <Typography variant="h5" gutterBottom>Ecolix+ crecimiento 🌱</Typography>
               <Box
                 component="img"
                 src="/blanco.png"
@@ -162,7 +162,7 @@ function Home() {
 
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <Typography variant="h5" gutterBottom>Ecolix+ morado 💜</Typography>
+              <Typography variant="h5" gutterBottom>Ecolix+ madurez 🍅</Typography>
               <Box
                 component="img"
                 src="/morado.png"
@@ -189,7 +189,7 @@ function Home() {
 
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <Typography variant="h5" gutterBottom>Ecolix+ azul 💙</Typography>
+              <Typography variant="h5" gutterBottom>Ecolix+ floración 🌷</Typography>
               <Box
                 component="img"
                 src="/azul.png"
