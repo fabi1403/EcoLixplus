@@ -28,7 +28,7 @@ function Contact() {
               </Box>
               <Box sx={{ mb: 2 }}>
                 <Typography variant="h6">🔹 Precio:</Typography>
-                <Typography>$[9.99]</Typography>
+                <Typography>$4.99</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                 <LocalShippingIcon sx={{ mr: 1 }} />
@@ -51,7 +51,7 @@ function Contact() {
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <WhatsAppIcon sx={{ mr: 1 }} /> 📞 Teléfono / WhatsApp:
                 </Typography>
-                <Typography>📲 0987654321 </Typography>
+                <Typography>📲 proximamente </Typography>
                 <Typography variant="body2" color="text.secondary">
                 
                 </Typography>
@@ -61,7 +61,7 @@ function Contact() {
                 <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                   <EmailIcon sx={{ mr: 1 }} /> 📧 Correo electrónico:
                 </Typography>
-                <Typography>✉️ ecolix+@correo.com </Typography>
+                <Typography>✉️ proximamente </Typography>
               </Box>
 
               <Box sx={{ mb: 3 }}>
