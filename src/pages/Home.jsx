@@ -135,7 +135,7 @@ function Home() {
 
           <Grid item xs={12} sm={6} md={3}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <Typography variant="h5" gutterBottom>Ecolix+ crecimiento 🌱</Typography>
+              <Typography variant="h5" gutterBottom>Ecolix+ crecimiento 🪴</Typography>
               <Box
                 component="img"
                 src="/blanco.png"
