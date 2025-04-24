@@ -34,31 +34,31 @@ const slidesData = [
   {
     title: '🌍 El problema',
     text: 'Los fertilizantes químicos son caros, contaminantes y excluyen a muchos pequeños productores. Mientras tanto, toneladas de residuos vegetales se botan cada semana en mercados y plazas… …cuando podrían regenerar la tierra.',
-    image: 'https://source.unsplash.com/random?q=environmental+problem&w=600&h=400',
+    image: '/PR.jpg',
     alt: 'Problema ambiental'
   },
   {
     title: '💡 Nuestra solución: EcolixiPlus',
     text: 'Transformamos residuos urbanos en fertilizante líquido base. Lo fortificamos naturalmente con N, P o K para crear fertilizantes especializados: Ecolixi-N (crecimiento), Ecolixi-P (floración), Ecolixi-K (madurez), Ecolixi-Balance (general).',
-    image: 'https://source.unsplash.com/random?q=organic+fertilizer&w=600&h=400',
+    image: '/SO.jpg',
     alt: 'Solución EcolixiPlus'
   },
   {
     title: '📦 Nuestro modelo',
     text: 'Clientes: Agricultores medianos, Invernaderos, Exportadores, Huertos urbanos. Canales: Distribuidores rurales, Ferias agroecológicas, App móvil, Asociaciones de mujeres.',
-    image: 'https://source.unsplash.com/random?q=business+model&w=600&h=400',
+    image: '/MO.jpg',
     alt: 'Modelo de negocio'
   },
   {
     title: '♻️ Impacto y expansión',
     text: 'Cada litro evita 2-3 kg de basura en el relleno sanitario. Transformamos desechos en productividad. Queremos instalar centros de recolección en mercados urbanos. Escalar a todo el país como fertilizante circular nacional.',
-    image: 'https://source.unsplash.com/random?q=environmental+impact&w=600&h=400',
+    image: '/IN.jpg',
     alt: 'Impacto y expansión'
   },
   {
     title: '👩‍🌾 Nuestro equipo',
     text: 'Somos mujeres emprendedoras que creemos en la tierra y la transformación. EcolixiPlus no es solo un producto: Es una plataforma para empoderar a otras mujeres rurales, generar empleo verde y devolverle valor a lo que otros botan.',
-    image: 'https://source.unsplash.com/random?q=women+entrepreneurs&w=600&h=400',
+    image: '/NE.jpg',
     alt: 'Nuestro equipo'
   }
 ];
