@@ -18,7 +18,7 @@ const products = [
   {
     id: 1,
     name: 'Lixiviado EcoLix+ 🌱',
-    price: 9.99,
+    price: 4.99,
     image: '/lixi.png',
     description: 'Lixiviado ecológico premium con Calcio 🦴',
     unit: 'litro'
@@ -26,7 +26,7 @@ const products = [
   {
     id: 2,
     name: 'Lixiviado EcoLix+ ⚪',
-    price: 9.99,
+    price: 4.99,
     image: '/blanco.png',
     description: 'Lixiviado ecológico premium con Nitrógeno 🌿',
     unit: 'litro'
@@ -34,7 +34,7 @@ const products = [
   {
     id: 3,
     name: 'Lixiviado EcoLix+💜',
-    price: 9.99,
+    price: 4.99,
     image: '/morado.png',
     description: 'Lixiviado ecológico premium con Potasio 🌺',
     unit: 'litro'
@@ -42,7 +42,7 @@ const products = [
   {
     id: 4,
     name: 'Lixiviado EcoLix+ 💙',
-    price: 9.99,
+    price: 4.99,
     image: '/azul.png',
     description: 'Lixiviado ecológico premium con Fósforo 🌟',
     unit: 'litro'
