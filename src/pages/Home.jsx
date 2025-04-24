@@ -121,7 +121,7 @@ function Home() {
                 }}
               />
               <Typography variant="body1" color="text.secondary" gutterBottom>Contiene Calcio 🦴</Typography>
-              <Typography variant="h6" gutterBottom>$9.99</Typography>
+              <Typography variant="h6" gutterBottom>$4.99</Typography>
               <Button
                 variant="contained"
                 color="secondary"
