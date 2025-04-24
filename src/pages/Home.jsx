@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material';
+terimport { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import EcoIcon from '@mui/icons-material/EmojiNature';
@@ -19,7 +19,7 @@ const benefits = [
   {
     icon: <LocalShippingIcon sx={{ fontSize: 40 }} />,
     title: '🚚 Entrega a Domicilio',
-    description: 'Servicio de entrega en las principales ciudades de Ecuador'
+    description: 'Entrega de nuestro producto a tu hogar o negocio'
   },
   {
     icon: <AttachMoneyIcon sx={{ fontSize: 40 }} />,
