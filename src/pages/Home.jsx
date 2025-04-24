@@ -1,4 +1,4 @@
-terimport { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material';
+import { Box, Container, Typography, Button, Grid, Card, CardContent } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import EcoIcon from '@mui/icons-material/EmojiNature';
